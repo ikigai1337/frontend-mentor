@@ -31,7 +31,7 @@
 
   <!-- Rating state start -->
   <div class="container">
-    <div class="card">
+    <div class="rating-card" id="rating">
       <span class="star">
         <img src="./images/icon-star.svg">
       </span>
@@ -41,24 +41,44 @@
           offering!</p>
       </div>
       <div class="list-container">
-        <ul>
-          <li><button class="button-number">1</button></li>
-          <li><button class="button-number">2</button></li>
-          <li><button class="button-number">3</button></li>
-          <li><button class="button-number">4</button></li>
-          <li><button class="button-number">5</button></li>
+        <ul class="list">
+          <li><button id="list" class="button-number selected" value="1">1</button></li>
+          <li><button id="list" class="button-number" value="2">2</button></li>
+          <li><button id="list" class="button-number" value="3">3</button></li>
+          <li><button id="list" class="button-number" value="4">4</button></li>
+          <li><button id="list" class="button-number" value="5">5</button></li>
         </ul>
       </div>
-      <div class="button-submit">
-        <button>submit</button>
+      <div class="button-container">
+        <button class="button-submit" id="submit"">submit</button>
       </div>
     </div>
-  </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Walid</a>.
-  </div>
+    <!-- Thank you card  -->
+
+    <div class=" feedback-card" id="feedbackCard" style="display: none;"">
+          <img src=" ./images/illustration-thank-you.svg"> <p id="result">You selected out of 5</p>
+
+          <h1>Thank you!</h1>
+
+          <p>We appreciate you taking the time to give a rating. If you ever need more support.
+            don't hesitate to get in touch!</p>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Walid</a>.
+    </div>
+
+
+
+    <script src="app.js"></script>
+
 </body>
 
 </html>

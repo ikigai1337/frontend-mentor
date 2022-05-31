@@ -7,17 +7,18 @@ body {
 .container {
   color: white;
   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card {
-  position: relative;
-  width: 300px;
-  height: 300px;
+.rating-card {
+  width: 400px;
+  height: auto;
   background-color: hsl(213, 19%, 22%);
   /* color: hsl(213, 81%, 46%); */
-  background-size: cover;
   border-radius: 25px;
-  margin: auto;
+  margin: 30px;
   margin-top: 200px;
   padding: 30px;
 }
@@ -39,10 +40,59 @@ h1 {
 
 p {
   font-family: "Overpass", sans-serif;
+  font-size: 15px;
 }
-ul {
+.list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.list-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button-number {
+  background: hsl(213, 19%, 30%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
+  outline: none;
+  border: none;
+  color: hsl(216, 12%, 54%);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.button-number:hover {
+  background: hsl(25, 97%, 53%);
+  color: #fff;
+}
+
+.button-container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.button-submit {
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.button-submit:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
 }
